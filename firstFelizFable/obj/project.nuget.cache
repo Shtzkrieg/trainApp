@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "PlsBiVDTCBzLroiJEmJP/KpWSGn9Ten5T4V0L84TvZBBjuluvzS5n3fhg03+fFEi10qGaXM+qNXffWqHHH1b8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\933019\\falcoProj\\firstFelizFable\\firstFelizFable.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\933019\\.nuget\\packages\\fable.ast\\3.0.0\\fable.ast.3.0.0.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fable.browser.blob\\1.1.0\\fable.browser.blob.1.1.0.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fable.browser.dom\\2.0.1\\fable.browser.dom.2.0.1.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fable.browser.event\\1.2.1\\fable.browser.event.1.2.1.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fable.browser.webstorage\\1.0.0\\fable.browser.webstorage.1.0.0.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fable.core\\3.1.5\\fable.core.3.1.5.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fable.react\\7.4.0\\fable.react.7.4.0.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\feliz\\1.45.0\\feliz.1.45.0.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\feliz.compilerplugins\\1.5.0\\feliz.compilerplugins.1.5.0.nupkg.sha512",
+    "C:\\Users\\933019\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
