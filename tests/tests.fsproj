@@ -1,17 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
-
   <ItemGroup>
-    <Compile Include="Tests.fs" />
+    <Compile Include="RailTests.fs" />
     <Compile Include="Program.fs" />
+    <Compile Include="myapp/*.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -24,5 +21,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\myApp\myApp.fsproj" />
+    <ProjectReference Include="..\firstFelizFable\firstFelizFable.fsproj" />
+  </ItemGroup>
 </Project>

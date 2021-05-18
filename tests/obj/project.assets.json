@@ -8,6 +8,141 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "Fable.AST/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Fable.AST.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fable.AST.dll": {}
+        }
+      },
+      "Fable.Browser.Blob/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.6.2",
+          "Fable.Core": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Browser.Blob.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Browser.Blob.dll": {}
+        }
+      },
+      "Fable.Browser.Dom/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.0",
+          "Fable.Browser.Blob": "1.1.0",
+          "Fable.Browser.Event": "1.2.1",
+          "Fable.Browser.WebStorage": "1.0.0",
+          "Fable.Core": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Browser.Dom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Browser.Dom.dll": {}
+        }
+      },
+      "Fable.Browser.Event/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.0",
+          "Fable.Core": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Browser.Event.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Browser.Event.dll": {}
+        }
+      },
+      "Fable.Browser.WebStorage/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "Fable.Browser.Event": "1.0.0",
+          "Fable.Core": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Browser.WebStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Browser.WebStorage.dll": {}
+        }
+      },
+      "Fable.Core/3.1.5": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fable.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fable.Core.dll": {}
+        }
+      },
+      "Fable.React/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "Fable.Browser.Dom": "2.0.1",
+          "Fable.Core": "3.1.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Fable.React.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fable.React.dll": {}
+        }
+      },
+      "Falco/3.0.4": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.2",
+          "TaskBuilder.fs": "2.1.0"
+        },
+        "compile": {
+          "lib/net5.0/Falco.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Falco.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Feliz/1.45.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "Fable.Core": "3.1.5",
+          "Fable.React": "7.4.0",
+          "Feliz.CompilerPlugins": "1.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Feliz.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Feliz.dll": {}
+        }
+      },
+      "Feliz.CompilerPlugins/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "Fable.AST": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Feliz.CompilerPlugins.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Feliz.CompilerPlugins.dll": {}
+        }
+      },
       "FSharp.Core/5.0.0": {
         "type": "package",
         "compile": {
@@ -642,6 +777,33 @@
           }
         }
       },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.113.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -713,6 +875,12 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Console.dll": {}
+        }
+      },
+      "System.Data.SQLite.Core/1.0.113.7": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.113.2"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -1571,6 +1739,15 @@
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
         }
       },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1618,6 +1795,20 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
+        }
+      },
+      "TaskBuilder.fs/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.1.17",
+          "NETStandard.Library": "1.6.1",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/TaskBuilder.fs.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/TaskBuilder.fs.dll": {}
         }
       },
       "xunit/2.4.1": {
@@ -1698,6 +1889,38 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "firstFelizFable/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "Feliz": "1.45.0"
+        },
+        "compile": {
+          "bin/placeholder/firstFelizFable.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/firstFelizFable.dll": {}
+        }
+      },
+      "myApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "Falco": "3.0.0",
+          "System.Data.SQLite.Core": "1.0.113.7"
+        },
+        "compile": {
+          "bin/placeholder/myApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myApp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -1732,6 +1955,174 @@
         "coverlet-icon.png",
         "coverlet.collector.1.3.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Fable.AST/3.0.0": {
+      "sha512": "ZOdBEEBln959E+F7vGim1zvf80iJAFWtH/hAcQRAU9aCs/8ZGf/kWk7TdlW0xuRK50dvALgWZKJc0Hd/2OP0XA==",
+      "type": "package",
+      "path": "fable.ast/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.ast.3.0.0.nupkg.sha512",
+        "fable.ast.nuspec",
+        "lib/netstandard2.0/Fable.AST.dll",
+        "lib/netstandard2.0/Fable.AST.xml"
+      ]
+    },
+    "Fable.Browser.Blob/1.1.0": {
+      "sha512": "xMX7hPFwBUGuj75xLlH6VsVThZjRlGW4zOqXb1X+byRPLSBE91vtn9EueNUB+YpGhE9LfrtakIPNGy+dkoMkjg==",
+      "type": "package",
+      "path": "fable.browser.blob/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.browser.blob.1.1.0.nupkg.sha512",
+        "fable.browser.blob.nuspec",
+        "lib/netstandard2.0/Browser.Blob.dll",
+        "lib/netstandard2.0/Browser.Blob.xml"
+      ]
+    },
+    "Fable.Browser.Dom/2.0.1": {
+      "sha512": "1ajwxasfdbeFeh8OsgiuAScMZuWQkZpWHwZRi0J265nD0YMo4hqItX9/fmCwLnwln1OWbpbgpnZCDfwnhcR75A==",
+      "type": "package",
+      "path": "fable.browser.dom/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.browser.dom.2.0.1.nupkg.sha512",
+        "fable.browser.dom.nuspec",
+        "lib/netstandard2.0/Browser.Dom.dll",
+        "lib/netstandard2.0/Browser.Dom.xml"
+      ]
+    },
+    "Fable.Browser.Event/1.2.1": {
+      "sha512": "cK8rajjSCe1b3iFzC5sN4v8hTqUq9CpferJsYQOec0BCh9rKqPKk1xT34j/Afs0/+LJLgcmZjzqtgcyk5yhvzw==",
+      "type": "package",
+      "path": "fable.browser.event/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.browser.event.1.2.1.nupkg.sha512",
+        "fable.browser.event.nuspec",
+        "lib/netstandard2.0/Browser.Event.dll",
+        "lib/netstandard2.0/Browser.Event.xml"
+      ]
+    },
+    "Fable.Browser.WebStorage/1.0.0": {
+      "sha512": "ZqnZKYkhPO+wmJPxQqtiwSc3zCC/mB37SPlVi4ZLiHoPFnra7SQ3qaRn4/ENYTeaVtVq92eVaYbTyAOnFn+GPA==",
+      "type": "package",
+      "path": "fable.browser.webstorage/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.browser.webstorage.1.0.0.nupkg.sha512",
+        "fable.browser.webstorage.nuspec",
+        "lib/netstandard2.0/Browser.WebStorage.dll",
+        "lib/netstandard2.0/Browser.WebStorage.xml"
+      ]
+    },
+    "Fable.Core/3.1.5": {
+      "sha512": "Mft+v0YlEr+EL6WH7iyP8H4eGPZmgnU793RNNn5Bw5wJT+DsZii+dPlJW9ubX0lDgYQTBfnyuVUJj0+5XZdiqg==",
+      "type": "package",
+      "path": "fable.core/3.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.core.3.1.5.nupkg.sha512",
+        "fable.core.nuspec",
+        "lib/netstandard2.0/Fable.Core.dll",
+        "lib/netstandard2.0/Fable.Core.xml"
+      ]
+    },
+    "Fable.React/7.4.0": {
+      "sha512": "YCubSthKJ5CSKJs28WQC6DYiksdLdPD//aIxHqKUkYY3fS0qOHz0nEk5klalXSz6owk91Mnq9SnwccIpe4xD/A==",
+      "type": "package",
+      "path": "fable.react/7.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable.react.7.4.0.nupkg.sha512",
+        "fable.react.nuspec",
+        "fable/Fable.React.Extensions.fs",
+        "fable/Fable.React.FunctionComponent.fs",
+        "fable/Fable.React.Helpers.fs",
+        "fable/Fable.React.Hooks.fs",
+        "fable/Fable.React.Isomorphic.fs",
+        "fable/Fable.React.Props.fs",
+        "fable/Fable.React.ReactiveComponents.fs",
+        "fable/Fable.React.Standard.fs",
+        "fable/Fable.React.fs",
+        "fable/Fable.React.fsproj",
+        "fable/Fable.ReactDom.fs",
+        "fable/Fable.ReactServer.fs",
+        "lib/netstandard2.0/Fable.React.dll",
+        "lib/netstandard2.0/Fable.React.xml"
+      ]
+    },
+    "Falco/3.0.4": {
+      "sha512": "uTySWf666QZ1ZHhEJs6Uz2t9uErWHTCpRFLISB736d/m0l3Ot0qsdVdmcwMHP0MqcwYVase6d/PTtdcB1pkYCw==",
+      "type": "package",
+      "path": "falco/3.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "falco.3.0.4.nupkg.sha512",
+        "falco.nuspec",
+        "icon.png",
+        "lib/net5.0/Falco.dll",
+        "lib/net5.0/Falco.xml",
+        "lib/netcoreapp3.1/Falco.dll",
+        "lib/netcoreapp3.1/Falco.xml"
+      ]
+    },
+    "Feliz/1.45.0": {
+      "sha512": "rSqfi8o6SAY5Mh0E7PTp4H2QgoddhsW7Zk/mwTy3N8N4ice7GuuZnukeHzOOOHgtUONVrHGdCWAYXDJaAb6R1A==",
+      "type": "package",
+      "path": "feliz/1.45.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fable/BorderStyle.fs",
+        "fable/Colors.fs",
+        "fable/Feliz.fsproj",
+        "fable/Fonts.fs",
+        "fable/GridTypes.fs",
+        "fable/Html.fs",
+        "fable/Interop.fs",
+        "fable/Key.fs",
+        "fable/Length.fs",
+        "fable/Locale.fs",
+        "fable/Properties.fs",
+        "fable/React.fs",
+        "fable/ReactDOM.fs",
+        "fable/ReactInterop.js",
+        "fable/ReactTypes.fs",
+        "fable/StyleTypes.fs",
+        "fable/Styles.fs",
+        "fable/Svg.fs",
+        "fable/TextDecorationLine.fs",
+        "fable/TextDecorationStyle.fs",
+        "fable/Transform.fs",
+        "fable/TransitionProperty.fs",
+        "fable/Types.fs",
+        "feliz.1.45.0.nupkg.sha512",
+        "feliz.nuspec",
+        "lib/netstandard2.0/Feliz.dll",
+        "lib/netstandard2.0/Feliz.xml"
+      ]
+    },
+    "Feliz.CompilerPlugins/1.5.0": {
+      "sha512": "zOO/CFX+A24dHnj/XAg81f6O5Ehk9vHk4YSzRZqBejeSJoecQNvcqX/WE7VbpvDenYYAj4ufLI+MecWMipeULg==",
+      "type": "package",
+      "path": "feliz.compilerplugins/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "feliz.compilerplugins.1.5.0.nupkg.sha512",
+        "feliz.compilerplugins.nuspec",
+        "lib/netstandard2.0/Feliz.CompilerPlugins.dll",
+        "lib/netstandard2.0/Feliz.CompilerPlugins.xml"
       ]
     },
     "FSharp.Core/5.0.0": {
@@ -2446,6 +2837,27 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.113.2": {
+      "sha512": "yGIM9xFyPHl79HluNTSQarvAOIJ68pmzmlMayVN6Nivu/7TiaHt7WqptolvwmuKdAXei8OzENh9RNdh7d6evjQ==",
+      "type": "package",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.113.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
+        "lib/netstandard2.1/System.Data.SQLite.dll",
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.1/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.113.2.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -2688,6 +3100,17 @@
         "ref/xamarinwatchos10/_._",
         "system.console.4.3.0.nupkg.sha512",
         "system.console.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.113.7": {
+      "sha512": "2DKMIxfZpIVzdMfx1dj9qvTm+0m0Mx6sN6CZXMQDNytU7Sk/JKo0Ox6mvHAicfHrQgqZbUZMzMMtLXD0kwmFfg==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.113.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.113.7.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {
@@ -5412,6 +5835,51 @@
         "system.threading.timer.nuspec"
       ]
     },
+    "System.ValueTuple/4.4.0": {
+      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net461/System.ValueTuple.xml",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.4.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -5554,6 +6022,25 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "TaskBuilder.fs/2.1.0": {
+      "sha512": "SBL6WjMQjc3bxY4lDtw1h7dM+CDbE9Gt1czsaaSDgPzJQYq+bkDXfwI/QXFKHMtisGKXjkDVAVNxS/gQRE44eA==",
+      "type": "package",
+      "path": "taskbuilder.fs/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/TaskBuilder.fs.dll",
+        "lib/net45/TaskBuilder.fs.pdb",
+        "lib/net46/TaskBuilder.fs.dll",
+        "lib/net46/TaskBuilder.fs.pdb",
+        "lib/net47/TaskBuilder.fs.dll",
+        "lib/net47/TaskBuilder.fs.pdb",
+        "lib/netstandard1.6/TaskBuilder.fs.dll",
+        "lib/netstandard1.6/TaskBuilder.fs.pdb",
+        "taskbuilder.fs.2.1.0.nupkg.sha512",
+        "taskbuilder.fs.nuspec"
+      ]
+    },
     "xunit/2.4.1": {
       "sha512": "XNR3Yz9QTtec16O0aKcO6+baVNpXmOnPUxDkCY97J+8krUYxPvXT1szYYEUdKk4sB8GOI2YbAjRIOm8ZnXRfzQ==",
       "type": "package",
@@ -5688,6 +6175,16 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "firstFelizFable/1.0.0": {
+      "type": "project",
+      "path": "../firstFelizFable/firstFelizFable.fsproj",
+      "msbuildProject": "../firstFelizFable/firstFelizFable.fsproj"
+    },
+    "myApp/1.0.0": {
+      "type": "project",
+      "path": "../myApp/myApp.fsproj",
+      "msbuildProject": "../myApp/myApp.fsproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5695,6 +6192,8 @@
       "FSharp.Core >= 5.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "coverlet.collector >= 1.3.0",
+      "firstFelizFable >= 1.0.0",
+      "myApp >= 1.0.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
@@ -5723,7 +6222,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\933019\\falcoProj\\firstFelizFable\\firstFelizFable.fsproj": {
+              "projectPath": "C:\\Users\\933019\\falcoProj\\firstFelizFable\\firstFelizFable.fsproj"
+            },
+            "C:\\Users\\933019\\falcoProj\\myApp\\myApp.fsproj": {
+              "projectPath": "C:\\Users\\933019\\falcoProj\\myApp\\myApp.fsproj"
+            }
+          }
         }
       }
     },

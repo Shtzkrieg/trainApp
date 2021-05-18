@@ -399,7 +399,8 @@
           },
           "Feliz": {
             "target": "Package",
-            "version": "[1.45.0, )"
+            "version": "[1.45.0, )",
+            "generatePathProperty": true
           }
         },
         "imports": [

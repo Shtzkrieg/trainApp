@@ -19,7 +19,7 @@ open System
         let stopsToLine = List.concat [[first];[last]]
         {name = name; stops = stopsToLine}
 
-    // here, after refers the previous station to which you are adding the new station
+    // here, 'after' refers the previous station to which you are adding the new station
     let addStop (line: Line) (after: Station) (newStop: Station) = 
         failwith "not implemented yet"
         let i =

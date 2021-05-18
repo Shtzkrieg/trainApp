@@ -17,5 +17,6 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\933019\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgFeliz Condition=" '$(PkgFeliz)' == '' ">C:\Users\933019\.nuget\packages\feliz\1.45.0</PkgFeliz>
   </PropertyGroup>
 </Project>

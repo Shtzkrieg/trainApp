@@ -32,3 +32,8 @@ C:\Users\933019\falcoProj\myApp\obj\Debug\net5.0\myApp.fsproj.CopyComplete
 C:\Users\933019\falcoProj\myApp\obj\Debug\net5.0\myApp.dll
 C:\Users\933019\falcoProj\myApp\obj\Debug\net5.0\myApp.pdb
 C:\Users\933019\falcoProj\myApp\obj\Debug\net5.0\myApp.genruntimeconfig.cache
+C:\Users\933019\falcoProj\myApp\bin\Debug\net5.0\System.Data.SQLite.dll
+C:\Users\933019\falcoProj\myApp\bin\Debug\net5.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\933019\falcoProj\myApp\bin\Debug\net5.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\933019\falcoProj\myApp\bin\Debug\net5.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\933019\falcoProj\myApp\bin\Debug\net5.0\runtimes\win-x86\native\SQLite.Interop.dll
